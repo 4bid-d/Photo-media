@@ -1,0 +1,150 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#nav-bar{
+  padding-left: -4%;
+  padding-top: 1%;
+  padding-right: -4%;
+  color: #fff;
+  padding-bottom: auto;
+  }
+  .head-class{
+  
+  margin-top: -3.4%;
+  }
+  .nav-item{
+  margin-left: 3%;
+  }
+  #navhead{
+  padding-left: 35%;
+  }
+  .closebtn{
+  margin-top: 8%;
+  }
+  .symbol {
+  width: 35px;
+  height: 5px;
+  background-color:#fff;
+  margin: 6px 0;
+  }
+    
+    .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  
+  }
+  
+  .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  }
+  
+  .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  }
+  
+  .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  }
+  .img{
+      padding-top: 5%;
+      padding-left: 6%;
+  }
+  .card{
+    margin-left: 5%;
+    transition: box-shadow 0.8s;
+    
+  }
+  .card:hover{
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
+    }
+  
+  .card-body{
+    margin-top: 20px;
+  }
+  #card-3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #hed{
+    margin-left: 5%;
+    margin-top: -3.9%;
+  }
+  .gal-sec{
+    margin-left: 7%;
+    padding-top: 4%;
+  }
+  #lgo:hover{
+    font-size:x-large;
+  }
+  .menu-btn{
+    margin-left: 2%;
+  }
+  .login {
+    border:solid;
+    border-color: #fff;
+  }
+  .login:hover{
+    background-color:#ffff;
+    color: black; 
+  
+  }
+  
+  .sign-button{
+    border:solid;
+    border-color: #fff;
+  }
+  .sign-button:hover{
+    background-color:#ffff;
+    color: black;
+  }
+  .signfrm{
+    animation-name: slide;
+      animation-duration: 1s;
+      visibility: visible;
+  }
+  #-button{
+    display: flex;
+    justify-content: center;
+    height: min-content;
+    width: fit-content;
+    padding-left: 4%;
+  }
