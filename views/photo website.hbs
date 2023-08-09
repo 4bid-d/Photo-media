@@ -59,63 +59,18 @@
         <div class="container-fluid ">
           <div class="row">
 
-            <div class="card mt-5" style="width: 18rem;">
-              <a href="pictures\DSC_0068.JPG" target="_blank">
-                <img src="pictures\DSC_0068.JPG" alt="Lights" style="width:100%"></a>
-              <div class="card-body">
-                <h5 class="card-title"><i style='font-size:24px' class='fas'>&#xf3c5;</i> Shornur station</h5>
-                <p class="card-text">"Dont die with dreams die with <br> memorys."<br>              -unknown</p>
-              </div>
-            </div>
-
-              <div class="card pt-3" style="width: 18rem;">
-                <a href="pictures\photo.jpg" target="_blank">
-                  <img src="pictures\photo.jpg" alt="Lights" style="width:100%"></a>
-                <div class="card-body">
-                  <h5 class="card-title"> <i style='font-size:24px' class='fas'>&#xf3c5;</i> Shornur station</h5>
-                  <p class="card-text">"Dont die with dreams die with <br> memorys"<br>              -unknown</p>
-                  
-                </div>
-              </div>
-
-                <div class="card" style="width: 18rem;">
-                  <a href="pictures\20210314_070213.jpg" target="_blank">
-                    <img src="pictures\20210314_070213.jpg" alt="Lights" style="width:100%"></a>
+               {{#each photos}}
+                <div class="card mt-5" style="width: 18rem;">
+                  <a href="images/{{this.link}}.jpg" target="_blank">
+                    <img src="images/{{this.link}}.jpg" style="width:100%"></a>
                   <div class="card-body">
-                    <h5 class="card-title"><i style='font-size:24px' class='fas'>&#xf3c5;</i> Wonderla Kochin</h5>
-                    <p class="card-text">"Dont die with dreams die with <br> memorys"<br>              -unknown</p>
-                    
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text"></p>
                   </div>
                 </div>
+               {{/each}}
 
-                  <div class="card pt-3" id="card-3" style="width: 18rem;">
-                    <a href="pictures\DSC_0071.JPG" target="_blank">
-                      <img src="pictures\DSC_0071.JPG" alt="Lights" style="width:100%"></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><i style='font-size:24px' class='fas'>&#xf3c5;</i> Pappinisseri</h5>
-                      <p class="card-text">"Dont die with dreams die with <br> memorys"<br>              -unknown</p>
-                      
-                    </div>
-                  </div>
-
-                  <div class="card pt-3" id="card-3" style="width: 18rem;">
-                    <a href="pictures\20211022_132711.jpg" target="_blank">
-                      <img src="pictures\20211022_132711.jpg" alt="Lights" style="width:100%"></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><i style='font-size:24px' class='fas'>&#xf3c5;</i> Train Shornur</h5>
-                      <p class="card-text">"Dont die with dreams die with <br> memorys"<br>              -unknown</p>
-                      
-                    </div>
-                  </div>
-
-                  <div class="card pt-3" id="card-3" style="width: 18rem;">
-                    <a href="pictures\20211022_132832.jpg" target="_blank">
-                      <img src="pictures\20211022_132832.jpg" alt="Lights" style="width:100%"></a>
-                    <div class="card-body">
-                      <h5 class="card-title"><i style='font-size:24px' class='fas'>&#xf3c5;</i> Train Shornur</h5>
-                      <p class="card-text">"time is precious don't waste<br> it."<br>              -unknown</p>
-                    </div>
-                  </div>
+             
           </div>
         </div>
       </section>

@@ -8,8 +8,8 @@ var homeRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
 var contactRouter = require('./routes/contact');
-var Router = require('./routes/users');
 var app = express();
+var fileUpload = require('express-fileupload')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +19,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(fileUpload());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', homeRouter);
@@ -41,5 +42,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+app.listen("3000",()=>{
+  console.log("server started at 3000")
+})
 
 module.exports = app;
